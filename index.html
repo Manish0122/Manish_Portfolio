@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manish Bisht | Data Analyst</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #ff6f00, #ffa726);
+      color: white;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      flex-shrink: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+    .header-content {
+      max-width: 600px;
+    }
+    .header-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .header-content p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #e65100;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #ffd180;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #e65100;
+    }
+    .btn {
+      background: #ff8f00;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .project-gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+      transition: all 0.3s ease-in-out;
+    }
+    .project-gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      user-select: none;
+      transition: transform 0.3s ease-in-out;
+    }
+    .project-gallery img:hover {
+      transform: scale(1.05);
+    }
+    .project-details {
+      margin-top: 2rem;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .project-details.active {
+      display: block;
+    }
+    video, img.project-media {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      pointer-events: none;
+      user-select: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .project-item {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+      opacity: 0;
+      animation: fadeInProject 0.8s forwards;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+    .multi-images {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    .multi-images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      pointer-events: none;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    footer {
+      background: #ff6f00;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInProject {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="li.jpg" alt="Manish Bisht" />
+    <div class="header-content">
+      <h1>Manish Bisht</h1>
+      <p>Certified Data Analyst | Passionate about turning data into insights</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a <strong>certified Data Analyst</strong> with a strong passion for uncovering insights and solving problems through data. My academic background includes a <strong>B.Sc. in Physics, Chemistry, and Mathematics</strong> from Sri Dev Suman University, which helped me build a solid foundation in analytical thinking and logic.
+    </p>
+    <p>
+      Currently, I’m pursuing a <strong>BCA in Data Analytics</strong> from <strong>UPES, Dehradun</strong>—an exciting step forward that aligns with my deepening interest in computer science, data modeling, and AI-driven technologies.
+    </p>
+    <p>
+      I love working with <strong>SQL, Python, and Power BI</strong> to transform raw data into meaningful visual stories. My focus is on building clean, interactive dashboards and insightful reports that enable businesses to make data-driven decisions. For me, data isn't just numbers—it's a tool to understand behavior, identify patterns, and drive strategic impact.
+    </p>
+    <p>
+      Originally from <strong>Chamoli, Uttarakhand</strong> and now based in <strong>Dehradun</strong>, I’ve always been driven by curiosity and a constant desire to learn. Whether I’m diving into new analytics techniques, exploring advanced SQL functions, or building personal projects to apply my skills—I truly enjoy the learning process.
+    </p>
+    <p>
+      My ultimate goal is to become a <strong>Data Scientist</strong>, combining statistical methods, domain knowledge, and technology to solve real-world challenges and create value through data.
+    </p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>You can download my resume below:</p>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+      <h3>Sales Dashboard Analysis</h3>
+      <div class="multi-images">
+        <img src="sales1.jpg" alt="Sales Dashboard Screenshot 1" />
+        <img src="sales2.jpg" alt="Sales Dashboard Screenshot 2" />
+      </div>
+      <video controls muted oncontextmenu="return false;" controlsList="nodownload">
+        <source src="sales_video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="project-item">
+      <h3>Customer Segmentation Report</h3>
+      <div class="multi-images">
+        <img src="customer1.jpg" alt="Customer Segmentation Screenshot 1" />
+        <img src="customer2.jpg" alt="Customer Segmentation Screenshot 2" />
+      </div>
+      <video controls muted oncontextmenu="return false;" controlsList="nodownload">
+        <source src="customer_video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: manish.bisht@example.com</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Manish Bisht. All rights reserved.</p>
+  </footer>
+</body>
+</html>
